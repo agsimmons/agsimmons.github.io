@@ -1,0 +1,24 @@
+{
+  "name": "agsimmons.github.io",
+  "version": "0.1.0",
+  "description": "",
+  "author": "Andrew Simmons",
+  "homepage": "https://www.agsimmons.com",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/agsimmons/agsimmons.github.io.git"
+  },
+  "bugs": {
+    "url": "https://github.com/agsimmons/agsimmons.github.io/issues"
+  },
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "build-deps": "npm --prefix submodules/txt-hours-react/ install && npm --prefix submodules/txt-hours-react/ run build",
+    "build": "npm run build-deps && eleventy --input ./src/",
+    "dev": "eleventy --input ./src/ --serve"
+  },
+  "dependencies": {
+    "@11ty/eleventy": "^3.1.2"
+  }
+}
