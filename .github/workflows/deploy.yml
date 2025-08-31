@@ -28,6 +28,16 @@ jobs:
       uses: actions/setup-node@v4
       with:
         node-version: "22"
+    - name: Restore node_modules cache
+      uses: actions/cache@v4
+      with:
+        path: node_modules
+        key: node-modules-${{ hashFiles('package-lock.json') }}
+    - name: Restore txt-hours-react node_modules cache
+      uses: actions/cache@v4
+      with:
+        path: submodules/txt-hours-react/node_modules
+        key: txt-hours-react-node-modules-${{ hashFiles('submodules/txt-hours-react/package-lock.json') }}
     - name: Install dependencies
       run: npm ci
     - name: Build site
