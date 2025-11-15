@@ -155,7 +155,7 @@ In a song, there are a lot more than two frequencies. This is how the song "I Ra
 
 <div class="image-center-container"><img src="/img/posts/2021-07-24-digital-media-audio/spectral_analysis_04.png" alt="Spectral analysis of I Ran by A Flock of Seagulls"></div>
 
-[This application](https://github.com/withmorten/spek-alternative) provides a key on the right side showing how the colors used relate to the amplitude of the signal at its different frequencies. You can visually see the pair of tones sweeping down in frequency near the beginning of the song. You can also see where the instruments stop for a moment at 2:11, 3:04, and 4:30.
+[Spek](https://github.com/alexkay/spek) provides a key on the right side showing how the colors used relate to the amplitude of the signal at its different frequencies. You can visually see the pair of tones sweeping down in frequency near the beginning of the song. You can also see where the instruments stop for a moment at 2:11, 3:04, and 4:30.
 
 Spectral analysis can also be used to identify bad transcodes like those described in the section on [Transcoding](#transcoding). Here is the same song transcoded from a lossless FLAC file, to MP3 128 kbps, and then back to FLAC.
 
