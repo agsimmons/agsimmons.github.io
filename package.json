@@ -15,10 +15,17 @@
   "type": "module",
   "scripts": {
     "build-deps": "npm --prefix submodules/txt-hours-react/ ci && npm --prefix submodules/txt-hours-react/ run build",
-    "build": "npm run build-deps && eleventy --input ./src/",
-    "dev": "eleventy --input ./src/ --serve"
+    "build-site": "eleventy",
+    "build": "npm run build-deps && npm run build-site",
+    "dev": "eleventy --serve"
   },
-  "dependencies": {
-    "@11ty/eleventy": "^3.1.2"
+  "devDependencies": {
+    "@11ty/eleventy": "^3.1.2",
+    "@11ty/eleventy-img": "^6.0.4",
+    "@11ty/eleventy-plugin-rss": "^2.0.4",
+    "@11ty/eleventy-plugin-syntaxhighlight": "^5.0.2",
+    "@trivago/prettier-plugin-sort-imports": "^6.0.0",
+    "luxon": "^3.7.2",
+    "prettier": "^3.6.2"
   }
 }
